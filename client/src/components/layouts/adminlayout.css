@@ -1,0 +1,85 @@
+/* Header styles */
+.admin-header {
+    background-color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Title styles */
+.admin-title {
+    color: white;
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Container styles */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navigation styles */
+.admin-nav {
+    margin-top: 1rem;
+}
+
+/* Navigation list styles */
+.admin-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Navigation item styles */
+.admin-nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation link styles */
+.admin-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: block;
+    font-size: 1rem;
+}
+
+.admin-nav-link:hover {
+    background-color: #444;
+    transform: translateY(-1px);
+}
+
+/* Active link styles */
+.admin-nav-link.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .admin-nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .admin-nav-link {
+        padding: 0.75rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .admin-container {
+        padding: 0 0.5rem;
+    }
+}
