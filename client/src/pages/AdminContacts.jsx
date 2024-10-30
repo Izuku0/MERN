@@ -20,7 +20,7 @@ export const AdminContacts = () => {
       })
       const jsondata = await response.json()
       setData(jsondata)
-      console.log(jsondata);
+   
       
     } catch (error) {
       console.log("error in admincontacts",error);
@@ -37,11 +37,7 @@ export const AdminContacts = () => {
               Authorization:authorizationToken
           }
       });
-      console.log(response);
-      
       const data = await response.json()
-      console.log(data);
-      
       if(response.ok){
          AdminContacts()
          toast.warn("Contact Deleted Successfully")

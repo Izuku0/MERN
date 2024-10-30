@@ -34,7 +34,7 @@ export const Contact = () => {
   const handleSubmit = async (e)=>{
     e.preventDefault()
 
-    console.log(contact)
+  
     try {
       const response = await fetch ("http://localhost:5000/api/contact/contact", {
         method:"POST",
@@ -43,7 +43,7 @@ export const Contact = () => {
         },
         body:JSON.stringify(contact)
       })
-      console.log(response);
+   
       if(response.ok){
         alert("message sent successfully")
         setContact({

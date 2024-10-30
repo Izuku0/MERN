@@ -5,8 +5,6 @@ import { useAuth } from '../../store/auth'
 export const AdminLayout = () => {
 
     const {user,isLoading} = useAuth()
-    console.log("user",user);
-    
     if(isLoading){
         return <h1>Loading...</h1>
     }

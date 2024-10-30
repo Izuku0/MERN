@@ -4,8 +4,7 @@ import { useAuth } from '../store/auth'
 
 export const Service = () => {
   const {service} = useAuth()
-  console.log(service);
-  
+
   return (
         <>
         <div className='service-page'>

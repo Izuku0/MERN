@@ -8,7 +8,7 @@ import { Link, NavLink } from 'react-router-dom'
 export const AdminUsers = () => {
     const {authorizationToken} = useAuth()
     const[users,setUsers] = useState([]);
-    // console.log(token);
+  
     
 const deleteUser = async (id)=>{
 
@@ -19,9 +19,7 @@ const deleteUser = async (id)=>{
              Authorization:authorizationToken
          }
      });
-     const data = await response.json()
-     console.log(data);
-     
+   
      if(response.ok){
         getAllUserData()
         toast.warn("User Deleted Successfully")
@@ -47,8 +45,7 @@ const deleteUser = async (id)=>{
     
             }
             );
-            const data = await response.json();
-            console.log(`users ${data}`);
+           
             setUsers(data)
         } catch (error) {
             console.log("Error fetching user data");

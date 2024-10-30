@@ -1,18 +1,18 @@
 import {Routes,Route} from "react-router-dom"
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
-import { Service } from "./pages/Service";
-import { Register } from "./pages/Register";
-import { Login } from "./pages/Login";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./pages/Footer";
-import { Error } from "./pages/Error";
-import { Logout } from "./pages/Logout";
-import { AdminLayout } from "./components/layouts/admin-layout";
-import { AdminUsers } from "./pages/AdminUsers";
-import { AdminContacts } from "./pages/AdminContacts";
-import { AdminUpdate } from "./pages/AdminUpdate";
+import { Home } from "./pages/Home.jsx";
+import { About } from "./pages/About.jsx";
+import { Contact } from "./pages/Contact.jsx";
+import { Service } from "./pages/Service.jsx";
+import { Register } from "./pages/Register.jsx";
+import { Login } from "./pages/Login.jsx";
+import { Navbar } from "./components/Navbar.jsx";
+import { Footer } from "./pages/Footer.jsx";
+import { Error } from "./pages/Error.jsx";
+import { Logout } from "./pages/Logout.jsx";
+import AdminLayout from "./components/layouts/admin-layout.jsx";
+import { AdminUsers } from "./pages/AdminUsers.jsx";
+import { AdminContacts } from "./pages/AdminContacts.jsx";
+import { AdminUpdate } from "./pages/AdminUpdate.jsx";
 
 
 

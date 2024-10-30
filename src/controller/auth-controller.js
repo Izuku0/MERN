@@ -8,7 +8,7 @@ import bcrypt from 'bcrypt';
 
 const home = asyncHandler(async (req, res) => {
     res.send({message:"hello world"})
-    console.log(req.body)
+
 
 });
 const register = asyncHandler(async (req, res) => {
