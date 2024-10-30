@@ -12,7 +12,7 @@ import { Logout } from "./pages/Logout.jsx";
 import { AdminUsers } from "./pages/AdminUsers.jsx";
 import { AdminContacts } from "./pages/AdminContacts.jsx";
 import { AdminUpdate } from "./pages/AdminUpdate.jsx";
-import { AdminLayout } from "./components/layouts/admin-layout.jsx";
+import { AdminLayout } from "./components/layouts/Admin-layout.jsx";
 
 
 
