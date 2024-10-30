@@ -7,6 +7,7 @@ import { connectDB } from './db/db.js';
 import errorMiddleware from './middleware/error-middleware.js';
 import serviceRoute from './routes/service-router.js';
 import adminRoute from './routes/admin-router.js';
+import path from 'path'
 
 const app = express()
 
@@ -24,15 +25,20 @@ dotenv.config(
 )
 app.use(express.json())
 
+const _dirname =path.resolve()
+
 app.use("/api/auth/",authRoute)
 app.use("/api/contact/",contactRoute)
 app.use("/api/data/",serviceRoute)
 
-
 app.use("/api/admin/",adminRoute)
-
+app.use(express.static(path.join(_dirname,'../client/dist')))
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
+  })
 
 app.use(errorMiddleware);
+
 
 connectDB().then(()=>{
 
