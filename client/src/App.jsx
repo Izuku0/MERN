@@ -9,10 +9,11 @@ import { Navbar } from "./components/Navbar.jsx";
 import { Footer } from "./pages/Footer.jsx";
 import { Error } from "./pages/Error.jsx";
 import { Logout } from "./pages/Logout.jsx";
-import AdminLayout from "./components/layouts/admin-layout.jsx";
 import { AdminUsers } from "./pages/AdminUsers.jsx";
 import { AdminContacts } from "./pages/AdminContacts.jsx";
 import { AdminUpdate } from "./pages/AdminUpdate.jsx";
+import { AdminLayout } from "./components/layouts/admin-layout.jsx";
+
 
 
 
