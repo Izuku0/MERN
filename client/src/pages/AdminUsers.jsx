@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useAuth } from '../store/auth'
 import './adminUser.css'
 import { toast } from 'react-toastify'
-import { Link, NavLink } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 export const AdminUsers = () => {
     const {authorizationToken} = useAuth()
@@ -45,7 +45,7 @@ const deleteUser = async (id)=>{
     
             }
             );
-           
+           const data = await response.json();
             setUsers(data)
         } catch (error) {
             console.log("Error fetching user data");
