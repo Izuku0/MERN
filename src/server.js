@@ -13,7 +13,7 @@ import { fileURLToPath } from 'url';
 const app = express();
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://mern-1-jnnc.onrender.com',
     methods: "POST,GET,HEAD,PUT,PATCH,DELETE",
     credentials: true
 };

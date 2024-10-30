@@ -18,7 +18,7 @@ export const AdminUpdate = () => {
     const getSingleUserData = async () =>{
       
         try {
-            const response = await fetch (`http://localhost:5000/api/admin/users/${params.id}`, {
+            const response = await fetch (`https://mern-1-jnnc.onrender.com/api/admin/users/${params.id}`, {
               method:"GET",
               headers:{
                
@@ -45,7 +45,7 @@ export const AdminUpdate = () => {
     const handleSubmit = async () =>{
       
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`,{
+            const response = await fetch(`https://mern-1-jnnc.onrender.com/api/admin/users/update/${params.id}`,{
                 method:"PATCH",
                 headers:{
                     "Content-Type":"application/json",

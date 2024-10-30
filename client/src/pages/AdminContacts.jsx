@@ -11,7 +11,7 @@ export const AdminContacts = () => {
 
   const AdminContacts = async () => {
     try {
-      const response = await fetch (`http://localhost:5000/api/admin/contacts`, {
+      const response = await fetch (`https://mern-1-jnnc.onrender.com/api/admin/contacts`, {
         method:"GET",
         headers:{
          
@@ -31,7 +31,7 @@ export const AdminContacts = () => {
   const deleteUser = async (id)=>{
 
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/contacts/delete/${id}`,{
+      const response = await fetch(`https://mern-1-jnnc.onrender.com/api/admin/contacts/delete/${id}`,{
           method:'DELETE',
           headers:{
               Authorization:authorizationToken

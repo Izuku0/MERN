@@ -32,7 +32,7 @@ export const AuthContextProvider = ({children}) => {
     const userAuthentication = async () =>{
         try {
             setIsLoading(true)
-            const response = await fetch("http://localhost:5000/api/auth/user",{
+            const response = await fetch("https://mern-1-jnnc.onrender.com/api/auth/user",{
                 method:"GET",
                 headers:{
                     "Authorization":authorizationToken,
@@ -55,7 +55,7 @@ export const AuthContextProvider = ({children}) => {
 
     const services = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/data/service",{
+            const response = await fetch("https://mern-1-jnnc.onrender.com/api/data/service",{
               method:"GET",
             } 
             )

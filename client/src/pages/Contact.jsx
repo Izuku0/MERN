@@ -36,7 +36,7 @@ export const Contact = () => {
 
   
     try {
-      const response = await fetch ("http://localhost:5000/api/contact/contact", {
+      const response = await fetch ("https://mern-1-jnnc.onrender.com/api/contact/contact", {
         method:"POST",
         headers:{
           "Content-Type":"application/json"
